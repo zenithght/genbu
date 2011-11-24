@@ -1,0 +1,11 @@
+%% This is the application resource file (.app file) for the,
+%% application.
+{application, genbu_access_control,
+  [{description, "Your Desc HERE"},
+   {vsn, "0.1.0"},
+   {modules, [genbu_access_control_app,
+              genbu_access_control_sup]},
+   {registered,[genbu_access_control_sup]},
+   {applications, [kernel, stdlib]},
+   {mod, {genbu_access_control_app,[]}},
+   {start_phases, []}]}.
